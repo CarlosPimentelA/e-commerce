@@ -1,123 +1,58 @@
+.content-cart{
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  padding: 50px;
+}
+
+.cart{
+  flex: 2;
+}
+
 .cart-title {
-  margin-left: 140px;
-}
-
-
-.cart-section-div {
-  display: grid;
-  grid-template-columns: minmax(100px, 1fr) 300px;
-}
-
-.cart-section-div aside {
-  height: 100vh;
-}
-
-.card-product-cards {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  margin-top: 40px;
-}
-
-.cart-section-div .cart-buy-list {
-  background-color: #58a4b0;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.cart-buy-list {
-  font-family: "Montserrat", sans-serif, system-ui, -apple-system,
-    BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-    "Open Sans", "Helvetica Neue", sans-serif;
-  padding: 0px;
-  color: #fff;
+  font-size: 40px;
   font-weight: 600;
-  margin-top: 25px;
-  border-radius: 12px;
 }
 
-.cart-buy-list button {
-  outline: none;
-    background-color: #99fd99;
-    border: 0;
-    width: 100px;
-    margin-left: 80px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    font-weight: 600;
-    height: 25px;
-    border-radius: 7px;
-    color: #fff;
-    font-size: 15px;
+.total-products-card{
+  font-size: 20px;
+  font-weight: 500;
 }
 
-.cart-buy-list span {
-    margin-left: 84px;
-    padding-top: 30px;
+.total-products-card span{
+  color: #64b7c4;
+  font-weight: 600;
 }
 
-.cart-buy-list ol {
-  margin-left: 35px;
-}
-.cart-buy-list span {
-margin-left: 80px;
-}
-.cart-buy-list button {
-  margin-left: 80px;
-}
-
-@media screen and (max-width: 1000px) {
-  .cart-section-div {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .cart-list-aside {
-    margin-top: 20px;
-    width: 270px;
-    margin-left: 320px;
-  }
-  .cart-buy-list ol {
-    margin-left: 17px;
-  }
-  .cart-buy-list span {
-  margin-left: 60px;
-  }
-  .cart-buy-list button {
-    margin-left: 60px;
-  }
-  .cart-buy-list {
-    height: 250px;
-  }
-  .cart-section-div aside {
-    height: 50vh;
-  }
-  .cart-title {
-    margin-left: 230px;
-  }
+.cart-pay-aside{
+  flex: 1;
+  height: 300px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 20px; 
 }
 
-@media screen and (max-width: 770px) {
-  .cart-list-aside {
-    margin-left: 220px;
-  }
-  .cart-title {
-    margin-left: 170px;
-  }
+
+.cart-pay-aside h2{
+  font-size: 30px;
+  font-weight: 700;
+  color: #57A2AE;
 }
 
-@media screen and (max-width: 600px) {
-  .cart-list-aside {
-    margin-left: 140px;
-  }
-  .cart-title {
-    margin-left: 90px;
-  }
+.cart-pay-aside p{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.cart-pay-cant{
+  color: #64b7c4;
+  font-weight: 600;
+}
+
+.cart-pay-total{
+  color: #029b02;
+  font-weight: 700;
 }

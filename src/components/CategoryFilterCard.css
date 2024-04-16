@@ -6,16 +6,18 @@
     text-align: center;
     height: 100%;
     padding-top: 50px;
+    
 }
 
 .category-filters{
-    width: 200px;
+    width: 150px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .img-category{
     width: 100%;
-    background-color: #eee;
+    border: 1px solid #cccccc79;
     border-radius: 200px;
 }
 
@@ -27,7 +29,7 @@
 }
 
 .name-category{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
     margin-top: 10px;
     color: #58a4b0;

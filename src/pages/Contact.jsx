@@ -1,9 +1,12 @@
 import { useEffect } from "react";
 import "./Contact.css";
+import NavBar from "../components/NavBar";
+import { Footer } from "../components/Footer";
 function Contact() {
   
   return (
     <>
+    <NavBar/>
       <form className="contact-page">
         <div className="contact-form">
           <div className="contact-form-header">
@@ -37,6 +40,7 @@ function Contact() {
         </div>
         <div className="contact-img"></div>
       </form>
+      <Footer/>
     </>
   );
 }

@@ -7,9 +7,9 @@ body {
   list-style: none;
   color: #fff;
   background-color: #58a4b0;
-  height: 80px;
+  height: 60px;
   width: 100%;
-  padding: 20px 0px;
+  padding: 20px 10px;
 
   display: flex;  
   justify-content: space-around;
@@ -19,7 +19,7 @@ body {
 .company-name {
   font-weight: 500;
   align-self: center;
-  font-size: 30px;
+  font-size: 25px;
   text-decoration: none;
   color: #fff;
   font-weight: 600;
@@ -42,7 +42,7 @@ body {
 }
 
 .navbar-ul .links {
-  font-size: 22px;
+  font-size: 17px;
   color: #ffffffad;
   font-weight: 400;
   transition: 0.2s;
@@ -54,20 +54,20 @@ body {
   font-weight: 400;
 }
 
-.input {
+.input-search-term {
   outline: none;
   background-color: #fff;
   border: 0;
   border-radius: 20px;
-  padding: 10px 10px 10px 20px;
+  padding: 8px 5px 8px 20px;
   width: 25%;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 500;
 }
 
 .cart-icon {
   color: #fff;
-  font-size: 35px;
+  font-size: 30px;
   align-self: center;
   vertical-align: center;
 }
@@ -76,14 +76,14 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 .account{
   display: flex;
   align-items: center;
   gap:10px;
-  font-size: 23px;
+  font-size: 18px;
   font-weight: 500;
 }
 

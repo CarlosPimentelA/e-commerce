@@ -83,6 +83,18 @@ userSchema.pre("deleteOne", async function (next) {
   }
 });
 
+userSchema.pre('save', async function (next) {
+  try {
+  if(this.isModified('password') || this.isNew) {
+    const hashPassword = await bcrypt.hash(this.password, 8)
+    this.password = hashPassword
+  }
+  next()
+  } catch (error) {
+    console.log(error)
+  }
+})
+
 const User = mongoose.model("User", userSchema);
 
 export default User;

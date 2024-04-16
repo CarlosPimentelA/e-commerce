@@ -20,7 +20,7 @@ footer{
     max-width: 80%;
     text-align: justify;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 
@@ -33,7 +33,7 @@ footer{
 .menu__footer h3,
 .medios__footer h3 {
     color: #333;
-    font-size: 26px;
+    font-size: 22px;
     margin-bottom: 20px;
 }
 
@@ -43,7 +43,7 @@ footer{
 }
 
 .menu__footer ul li{
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
 }
   
@@ -59,7 +59,7 @@ footer{
     margin-bottom: 10px;
     text-decoration: none;
     color: #57A2AE;
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .redes a{
@@ -67,7 +67,7 @@ footer{
     margin-bottom: 10px;
     text-decoration: none;
     color: #57A2AE;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 

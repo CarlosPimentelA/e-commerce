@@ -1,9 +1,7 @@
 import React, {useEffect, useRef} from 'react'
 import "./SlideShow.css"
-
-// Icons
-import { FaArrowCircleLeft } from "react-icons/fa";
-import { FaArrowCircleRight } from "react-icons/fa";
+import apple from '../assets/a.jpeg'
+import gaming from '../assets/jl.jpeg'
 
 import styled from 'styled-components'; // Importamos styled-components que es una librería que nos permite escribir css en js
 
@@ -59,15 +57,12 @@ useEffect(() => {
     
   return (
     <div className='container-principal'>
-        <div className='container-slideShow'ref={slideshow}>
+        <div className='container-slideShow' ref={slideshow}>
             <div className='slide'>
-                <img src="https://i.postimg.cc/7hPTLdj4/Dise-o-sin-t-tulo-1.png" alt="Imagen 1"></img>
+                <img src={apple} alt="Imagen 1"></img>
             </div>
             <div className='slide'>
-                  <img src="https://i.postimg.cc/SNSNwWbB/image.png" alt="Imagen 2"></img>
-                  <div className='texto-slide'>
-                    <p>15% descuento en productos de apple</p>
-                </div>
+                <img src={gaming} alt="Imagen 2"></img>
             </div>
             <div className='slide'>
                   <img src="https://via.placeholder.com/1200x400" alt="Imagen 2"></img>

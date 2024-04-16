@@ -29,7 +29,7 @@ routerCart.get("/cart/one", auth, async (req, res) => {
   }
 });
 
-routerCart.get("/cart/:id", auth, async (req, res) => {
+routerCart.delete("/cart/:id", auth, async (req, res) => {
   try {
     const cart = await CartProduct.findOne({ _id: req.params.id, owner: req.user._id });
     

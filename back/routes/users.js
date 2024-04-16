@@ -18,10 +18,8 @@ routerUser.post("/register", async (req, res) => {
 
 routerUser.post("/login", async (req, res) => {
   try {
-    const user = await User.userExist(
-      req.body.email,
-      req.body.password
-    );
+    const {email, password} = req.body
+    const user = await User.userExist(email, password);
     const token = await user.generateJwt();
     res.send({ user, token });
   } catch (error) {

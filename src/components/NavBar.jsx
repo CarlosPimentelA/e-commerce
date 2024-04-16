@@ -31,7 +31,7 @@ function NavBar() {
           </li>
         </ul>
 
-        <input type="text" placeholder="Buscar productos" className="input"/>
+        <input type="text" placeholder="Buscar productos" className="input-search-term"/>
 
         <div className="log-container">
            <Link to="/cart" className="cart-icon"><IoCartSharp className="react-icon-cart"/></Link>
