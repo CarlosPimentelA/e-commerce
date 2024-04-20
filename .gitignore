@@ -11,7 +11,9 @@ node_modules
 dist
 dist-ssr
 *.local
-
+./back/firebase
+./back/dbconnection.js
+./back/routes/paypal.js
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
