@@ -1,10 +1,9 @@
-import React, { useEffect, useState, createContext } from "react";
+import { useEffect, useState, createContext } from "react";
 
-export const ProductContext = createContext();
+export const FiltersContext = createContext();
 
-export const ProductProvider = ({ children }) => {
-  const token = localStorage.getItem("token");
-  const [products, setProducts] = useState([]);
+export const FiltersProvider = ({ children }) => {
+  const [filterProducts, setFilterProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [filters, setFilters] = useState({
     category: "",
@@ -28,7 +27,8 @@ export const ProductProvider = ({ children }) => {
       }
 
       const data = await response.json();
-      setProducts(data.docs);
+      setFilterProducts(data.docs);
+      console.log(data.docs);
     } catch (error) {
       console.error(error);
     }
@@ -63,31 +63,19 @@ export const ProductProvider = ({ children }) => {
     });
   };
 
-  const removeProductFromAdminPanel = async (productId) => {
-    try {
-      await fetch(`http://localhost:3000/api/products/${productId}`, {
-        method: "DELETE",
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
   return (
-    <ProductContext.Provider
+    <FiltersContext.Provider
       value={{
-        products,
-        setProducts,
+        filterProducts,
+        setFilterProducts,
         currentPage,
         nextPage,
         prevPage,
-        removeProductFromAdminPanel,
+        applyFilters,
+        resetFilters,
       }}
     >
       {children}
-    </ProductContext.Provider>
+    </FiltersContext.Provider>
   );
 };
