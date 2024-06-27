@@ -25,7 +25,7 @@ function Cart() {
   const loadPayPalScript = async () => {
     try {
       const paypalScript = await loadScript({
-        "client-id": "AYjVpmqiIRrq9iEghiK-PSFVozz7z7Nh1zZMqOfEodlcGy0maZMsJ8ZTkoTexOPyqmIFidEaABpfXRJI",
+        "client-id": "",
         currency: "USD",
         intent: "capture",
       });
